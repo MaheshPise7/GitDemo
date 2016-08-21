@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/network_image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/network_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_name"
+                android:text="full"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="100"
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_description"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:id="@+id/add_item"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/item_price"
+                android:layout_alignBottom="@+id/item_price"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/add" />
+
+            <TextView
+                android:id="@+id/item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/item_price"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:layout_toLeftOf="@+id/add_item"
+                android:layout_toStartOf="@+id/add_item"
+                android:text="0"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/minus_item"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/item_price"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_toLeftOf="@+id/add_item"
+                android:layout_toStartOf="@+id/item_quantity"
+                android:src="@mipmap/remove" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

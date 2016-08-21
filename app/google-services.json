@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "fluted-bee-124009",
+    "project_number": "394294603608",
+    "name": "Google Login Integration"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394294603608:android:e16ca29e04b48e78",
+        "client_id": "android:com.example.amol.ecom",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.example.amol.ecom",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394294603608-po5u4bob3e0g078pckngsu3lk0tkg4j7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amol.ecom",
+            "certificate_hash": "4C2383A13F9EDE983132700247C3D54527BF4217"
+          }
+        },
+        {
+          "client_id": "394294603608-qv60tc76fg0ev8njsjvc0b8nr91v5aqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
